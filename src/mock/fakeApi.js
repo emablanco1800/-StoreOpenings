@@ -55,7 +55,7 @@ export const getProducts =() => {
             }else{
                 resolve(productos)
             }
-        }, 5000)
+        }, 2000)
     })
 }
 
