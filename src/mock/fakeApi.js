@@ -6,7 +6,7 @@ const productos = [
         price: 1000,
         description: 'loremasdasdkjash kjaskdha',
         imagen:'../images/puerta01.jpg',
-        categoria: 'Puertas'
+        category: 'puertas'
 },
 {
     id:'2',
@@ -15,7 +15,7 @@ const productos = [
     price: 1500,
     description: 'loremasdasdkjash kjaskdha',
     imagen:'../images/puerta02.jpg',
-    categoria: 'Puertas'
+    category: 'puertas'
 },
 {
     id:'3',
@@ -24,7 +24,7 @@ const productos = [
     price: 2000,
     description: 'loremasdasdkjash kjaskdha',
     imagen:'../images/ventana01.jpg',
-    categoria: 'Ventanas'
+    category: 'ventanas'
 },
 {
     id:'4',
@@ -33,7 +33,7 @@ const productos = [
     price: 50,
     description: 'loremasdasdkjash kjaskdha',
     imagen:'../images/ventana02.jpg',
-    categoria: 'Ventanas'
+    category: 'ventanas'
 },
 {
     id:'5',
@@ -42,7 +42,7 @@ const productos = [
     price: 4000,
     description: 'loremasdasdkjash kjaskdha',
     imagen:'../images/porton01.jpg',
-    categoria: 'Portones'
+    category: 'portones'
 }
 ]
 

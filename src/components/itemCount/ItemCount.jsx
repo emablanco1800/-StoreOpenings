@@ -1,10 +1,12 @@
-import React from "react"
-import {useState} from "react"
+import React from 'react'
+import {useState} from 'react'
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock}) =>{
     const [count, setCount]= useState(1)
 
-    const onAdd =() =>{
+    const onAdd = ()=>{
+            console.log('compraste un item')
+        
     }
 
     const sumar = () =>{
@@ -15,9 +17,11 @@ const ItemCount = ({stock}) => {
 
     const restar = () => {
         if(count > 0){
-            setCount(count - 1)
+
+            setCount(count -1)
         }
     }
+
     return(
         <>
         <div className="d-flex justify-content-center">
