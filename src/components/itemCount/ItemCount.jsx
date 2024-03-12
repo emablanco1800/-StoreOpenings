@@ -30,7 +30,7 @@ const ItemCount = ({stock}) =>{
             <button className="btn btn-success" onClick={sumar}>+</button>
         </div>
         <div className="d-flex justify-content-center">
-            <button className="btn btn-primary" disabled={stock === 0 || count === 0} onClick={onAdd}>Comprar</button>
+            <button className="btn btn-primary" disabled={stock === 0 || count === 0} onClick={onAdd}>Añadir al carrito</button>
         </div>
         </>
     )

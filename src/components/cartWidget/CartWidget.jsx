@@ -1,4 +1,3 @@
-// import {BsCartFill} from "react-icons/bs"
 import { BsCart2 } from "react-icons/bs";
 import Badge from 'react-bootstrap/Badge';
 const CartWidget = ({counter}) => {

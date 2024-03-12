@@ -29,14 +29,11 @@ if(loading){
 
   return (
     <div>
-      {/* si quiero que salga la categoria */}
-       {
-       categoryId 
-       ?<h1 className='fst-italic text-danger-emphasis'>{greeting} <span style={{color:'black'}}>{categoryId}</span></h1>
-       :<h1 className='fst-italic text-danger-emphasis'>{greeting}</h1>
-       }
-       {/* si no quiero que salga la categoria */}
-       {/* <h1 className='fst-italic text-danger-emphasis'>{greeting}</h1> */}
+      {
+      categoryId 
+      ?<h1 className='fst-italic text-danger-emphasis'>{greeting} <span style={{color:'black'}}>{categoryId}</span></h1>
+      :<h1 className='fst-italic text-danger-emphasis'>{greeting}</h1>
+      }
           <ItemList productos={productos}/>
     </div>
   )
