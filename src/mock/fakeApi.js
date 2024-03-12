@@ -31,7 +31,7 @@ const productos = [
     name: 'Aireador de Aluminio',
     Stock: 15,
     price: 32.244,
-    description: 'Óptimo para el ingreso de luz y renovación de aire. Libre de mantenimiento y fácilmente lavables. Con vidrio stipolite de 4mm, mosquitero y reja.',
+    description: 'Aireador óptimo para el ingreso de luz y renovación de aire. Libre de mantenimiento y fácilmente lavables. Con vidrio stipolite de 4mm, mosquitero y reja.',
     imagen:'../images/ventana02.jpg',
     category: 'ventanas'
 },
