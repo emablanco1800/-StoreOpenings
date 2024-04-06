@@ -15,15 +15,18 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
             <Nav.Link as={NavLink} to='/'>Inicio</Nav.Link>
+            <Nav.Link as={NavLink} to='/form'>Pedidos</Nav.Link>
             <NavDropdown title="Categorias" id="basic-nav-dropdown">
                 <NavDropdown.Item as={NavLink} to='/categories/puertas'>Puertas</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={NavLink} to='/categories/ventanas'>Ventanas</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={NavLink} to='/categories/portones'>Portones</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item as={NavLink} to='/categories/griferia'>Grifería</NavDropdown.Item>
             </NavDropdown>
             </Nav>
-            <CartWidget counter={7}/>
+            <NavLink to='/cart' style={{textDecoration:'none'}}><CartWidget counter={0}/></NavLink>
         </Navbar.Collapse>
         </Container>
     </Navbar>

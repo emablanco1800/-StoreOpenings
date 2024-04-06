@@ -1,12 +1,14 @@
 import { BsCart2 } from "react-icons/bs";
-import Badge from 'react-bootstrap/Badge';
+import Badge from 'react-bootstrap/Badge'
+import { useContext } from "react"
+import { CartContext } from "../../context/CartContext"
 const CartWidget = ({counter}) => {
+    const {cartQuantity}= useContext(CartContext)
     return(
-        <>
-        <Badge bg="danger">{counter}</Badge>
-        <BsCart2  color="pink" fontSize={'1.5rem'}/>
-        
-        </>
+        <div style={{display:'flex'}}>
+            {cartQuantity() > 0 &&  <Badge bg="danger">{cartQuantity()}</Badge>}
+            <BsCart2 color='black' fontSize={'1.5rem'}/>
+        </div>
     )
 }
 export default CartWidget

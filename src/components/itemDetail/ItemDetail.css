@@ -1,0 +1,25 @@
+.product-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    margin-bottom: 5px;
+}
+
+.product-price {
+    margin-bottom: 10px;
+}
+
+.low-stock {
+    color: black;
+    font-weight: bold;
+}
