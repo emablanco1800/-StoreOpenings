@@ -21,7 +21,7 @@ function App() {
           <Route path='/item/:itemId' element={ <ItemDetailContainer/>}/>
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/checkout' element={<Checkout/>}/>
-          <Route path='*' element={<h2>404: Página no encontrada</h2>}/>
+          <Route path='*' element={<h2 style={{display:'flex', justifyContent:'center', alignItems:'center'}}>👷‍♂️ Sección en construcción 🚧</h2>}/>
         </Routes>
       </BrowserRouter>
     </CartProvider>

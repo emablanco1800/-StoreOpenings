@@ -1,8 +1,16 @@
 .product-list-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
-    margin: 20px auto; 
-    max-width: 1200px; 
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.product-list-container .item {
+    flex: 1 0 300px;
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
