@@ -50,16 +50,16 @@
   }
   
   .product-quantity .btn-add {
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50;
     color: white;
   }
   
   .product-quantity .btn-remove {
-    background-color: #f44336; /* Rojo */
+    background-color: #f44336;
     color: white;
   }
   
-  /* Consultas de medios */
+  /* CResponsive */
   @media (max-width: 768px) {
     .cart-container {
       padding: 10px;

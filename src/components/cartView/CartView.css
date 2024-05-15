@@ -90,22 +90,22 @@
 /* Media queries for responsive layout */
 @media (max-width: 768px) {
     .cart-item {
-      display: flex; /* Use flexbox for horizontal arrangement */
-      flex-direction: column; /* Arrange items vertically */
-      align-items: flex-start; /* Align items to the left */
+      display: flex; 
+      flex-direction: column; 
+      align-items: flex-start; 
     }
   
     .cart-item-name {
-      flex: 1; /* Allow name to expand */
-      margin-right: 10px; /* Add margin between name and quantity */
+      flex: 1;
+      margin-right: 10px; 
     }
   
     .cart-item-quantity {
-      flex: 0 0 auto; /* Allow quantity to shrink */
+      flex: 0 0 auto; 
     }
   
     .cart-item-price,
     .cart-item-total {
-      width: 100%; /* Make price and total take full width */
+      width: 100%;
     }
   }

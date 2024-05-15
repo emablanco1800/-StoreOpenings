@@ -1,43 +1,12 @@
 .card {
-    width: 18rem; /* Adjust width as needed */
-    border: none; /* Remove default border for a cleaner look */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 5px; /* Rounded corners for a softer appearance */
-    overflow: hidden; /* Prevent image overflow */
-    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  width: 18rem;
+  margin: 0 auto 20px; /* Centra horizontalmente y agrega margen inferior */
+  box-sizing: border-box;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .card {
+      width: calc(100% - 40px); /* Ocupar todo el ancho disponible con margen */
   }
-  
-  .card:hover {
-    transform: scale(1.02); /* Slight zoom on hover for emphasis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-  }
-  
-  .card-img-top {
-    height: 150px; /* Adjust image height as needed */
-    object-fit: cover; /* Crop image to fit within container */
-  }
-  
-  .card-body {
-    padding: 15px;
-  }
-  
-  .card-title {
-    margin-bottom: 10px; /* Add some space between title and price */
-    font-weight: bold;
-  }
-  
-  .btn-primary {
-    background-color: #28a745; /* Adjust button color for elegance */
-    border-color: #28a745; /* Match border color to button color */
-    color: white; /* White text for better contrast */
-    text-decoration: none; /* Remove underline */
-    padding: 5px 10px; /* Adjust padding for a balanced look */
-    border-radius: 3px; /* Rounded corners for a more polished look */
-    transition: all 0.3s ease-in-out; /* Smooth hover effect */
-  }
-  
-  .btn-primary:hover {
-    background-color: #218c3d; /* Change button color on hover for subtle feedback */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow on hover */
-  }
-  
+}
