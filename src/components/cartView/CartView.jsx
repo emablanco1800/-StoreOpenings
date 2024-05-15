@@ -14,7 +14,7 @@ const CartView = () => {
             <div key={compra.id} className="cart-item">
                 <img src={compra.imagen} alt={compra.name} className="cart-item-img" />
                 <span className="cart-item-name">{compra.name}</span>
-                <span className="cart-item-quantity">{compra.quantity}</span>
+                <span className="cart-item-quantity">Cantidad {compra.quantity}</span>
                 <span className="cart-item-price">${compra.price},00</span>
                 <span className="cart-item-total">Precio final: ${compra.price * compra.quantity},00</span>
                 <button className="btn btn-danger cart-item-remove-button" onClick={() => removeItem(compra.id)}>X</button>

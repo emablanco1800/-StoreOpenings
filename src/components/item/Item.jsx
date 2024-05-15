@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import './item.css'
 const Item = ({producto}) => {
     return(
         <div className="card" style={{width: '18rem'}} >

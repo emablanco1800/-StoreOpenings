@@ -1,38 +1,112 @@
+/* CSS base */
 .cart-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
-}
-
-.empty-cart {
-    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-.empty-cart h2 {
-    font-size: 24px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 10px;
-}
-
-.empty-cart h4 {
+  }
+  
+  .product-name {
     font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.empty-cart .btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .product-quantity {
+    margin-top: 10px;
+  }
+  
+  .product-quantity input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .product-quantity button {
+    padding: 5px 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-.empty-cart .btn:hover {
-    background-color: #0056b3;
-}
+  }
+  
+  .product-quantity .btn-add {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+  }
+  
+  .product-quantity .btn-remove {
+    background-color: #f44336; /* Rojo */
+    color: white;
+  }
+  
+  /* Consultas de medios */
+  @media (max-width: 768px) {
+    .cart-container {
+      padding: 10px;
+    }
+  
+    .product-details {
+      flex-direction: column-reverse; /* Ordena la imagen primero */
+    }
+  
+    .product-image {
+      width: calc(100% - 20px); /* Resta el padding del contenedor */
+      margin-bottom: 15px;
+    }
+  
+    .product-name {
+      font-size: 16px;
+    }
+  
+    .product-price {
+      font-size: 14px;
+    }
+  
+    .product-quantity {
+      margin-top: 5px;
+    }
+  
+    .product-quantity input {
+      width: 40px;
+    }
+  
+    .product-quantity button {
+      padding: 4px 8px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .product-name,
+    .product-price {
+      font-size: 14px;
+    }
+  
+    .product-quantity input {
+      width: 30px;
+    }
+  
+    .product-quantity button {
+      padding: 3px 6px;
+    }
+  }
+  
